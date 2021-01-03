@@ -1,0 +1,53 @@
+<ion-view view-title="yemekApp">
+  <ion-content>
+
+
+<div class="list list-inset">
+  <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Yemek ara" ng-model="kelime">
+  </label>
+</div>
+
+<div class="card" ng-if="kelime && sonuc.length>0">
+  <div class="item item-text-wrap">
+    <b>"{{kelime}}"</b> kelimesine ait {{sonuc.length}} sonuç bulundu <!--Arama sonucundan ne kadar bilgi var onun sayısı-->
+  </div>
+</div>
+
+<div class="card animate__animated animate__jello" ng-if="kelime && sonuc.length==0">
+  <div class="item item-text-wrap item-dark">
+    <b>"{{kelime}}"</b> kelimesine ait sonuç yok... <!--Arama sonucundan ne kadar bilgi var onun sayısı-->
+  </div>
+</div>
+
+
+<div class="row animate__animated animate__jello">
+  <div class="col col-top button button-outline button-assertive ">Çorbalar
+<img src="https://i12.haber7.net//haber/haber7/photos/2019/09/hangi_corbalar_zayiflatir_kilo_verdiren_corba_cesitleri_1551357985_4645.jpg" width="100" height="100">
+
+  </div>
+  <div class="col col-center button button-outline button-assertive">Ana Yemekler
+  <img src="https://i.pinimg.com/originals/26/87/d6/2687d63bfdf46b58d59959361871e8cc.jpg" width="100" height="100">
+  </div>
+  <div class="col col-bottom button button-outline button-assertive">Tatlılar
+<img src="https://cahidejibek.files.wordpress.com/2015/09/bayram-baklavalarc4b1.png?w=780" width="100" height="100">
+  </div>
+ 
+</div>
+
+
+
+<div class="list">
+
+    <a class="item item-avatar" ng-repeat="yemek in yemekler | filter:kelime as sonuc" href="#/app/playlists/{{yemek.id}}">
+      <img src={{yemek.logo}}>
+      <h2> {{yemek.adi}}</h2>
+      <p>{{yemek.kategori}}</p>
+    </a>
+
+    
+
+</div>
+  </ion-content>
+</ion-view>

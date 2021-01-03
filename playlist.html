@@ -1,0 +1,182 @@
+<ion-view view-title="Detay">
+  <ion-content>
+    <h1>{{bilgi.adi}}</h1>
+
+
+    <div class="list card">
+
+  <div class="item item-avatar">
+    <img src={{bilgi.logo}}>
+    <h2>{{bilgi.adi}}</h2>
+    <p>{{bilgi.kategori}}</p>
+  </div>
+
+  <div class="list card">
+
+
+
+  <div class="item item-body" ng-if="bilgi.id==0"> <!--id vererek her yemeğe farklı tarif çıkmasını sağlıyorum-->
+
+    <p>
+      <h3>Malzemeler:</h3> 
+     3 yemek kaşığı ayçiçek yağı
+     1 adet kuru soğan(iri doğranmış)
+     1 yemek kaşığıun
+    1 adet havuç(iri doğranmış)
+     1 adet patates(büyük boy, iri doğranmış)
+    1 tatlı kaşığıtuz
+    1 çay kaşığı karabiber
+    1,5 su bardağı kırmızı ya da sarı mercimek
+    6 su bardağı sıcak su(1 adet et su tablet ile hazırlanmış)
+<br> 
+Düdüklü tencerenin içine yıkadığınız mercimekleri koyun . Üzerine soyduğunuz patates ve soğanı ikiye bölüm atın.
+Göz kararı tuzunuzu da attıktan sonra üzerine et suyu ile birlikte toplamda 7-8 bardak kadar suyu koyun.
+Hemen hemen 20 dakika da pişecek olan çorbanızı ocaktan aldıktan sonra blendırdan geçirin.
+<br>
+Afiyet olsun...
+    </p>
+    <p>
+      <a href="#" class="subdued">300 Beğeni</a>
+      <a href="#" class="subdued">120 Kaydetme</a>
+    </p>
+  </div>
+
+<div class="item item-body" ng-if="bilgi.id==1" >
+
+    <p>
+     Tarhanayı suda 1 saat bekletin.
+
+Tencerede yağ, nane ve salçayı hafifçe karıştırıldıktan sonra 4 su bardağı suyu ve ezilmiş tarhanayı ilave edin.
+
+Tuzu da ekledikten sonra topaklanmaması için devamlı karıştırın.
+
+Kaynayınca karıştırmayı bırakın ve 5 dakika daha kaynatın.
+
+Afiyet olsun...
+    </p>
+    <p>
+      <a href="#" class="subdued">250 Beğeni</a>
+      <a href="#" class="subdued">135 Kaydetme</a>
+    </p>
+  </div>
+
+  <div class="item item-body" ng-if="bilgi.id==2" >
+
+    <p>
+     <h3>Malzemeler:</h3> 
+     3 adet kabak
+2 adet yumurta(çırpılmış)
+1 adet havuç
+3 kahve fincanı un
+1 demet taze soğan
+1 demet dereotu
+1 tatlı kaşığı tuz
+1 çay kaşığı karabiber
+<br>
+Bütün malzemeleri karıştırın.
+<br>
+
+Afiyet olsun...
+    </p>
+    <p>
+      <a href="#" class="subdued">101 Beğeni</a>
+      <a href="#" class="subdued">30 Kaydetme</a>
+    </p>
+  </div>
+
+
+</div>
+
+<div class="item item-body" ng-if="bilgi.id==3" >
+
+    <p>
+     <h3>Malzemeler:</h3> 
+     6 adet orta boy patlıcan
+3 yemek kaşığı zeytinyağı
+1 adet büyük boy kuru soğan
+2 adet yeşil biber(iç harcı için)
+350 gram kıyma
+2 diş sarımsak
+1/2 tatlı kaşığı biber salçası
+1/2 tatlı kaşığı domates salçası
+1 çay kaşığı tuz
+1 çay kaşığı karabiber
+2 adet domates
+6 adet orta boy yeşil sivri biber
+1 avuç maydanoz 
+    <br>
+    Öncelikle patlıcanlarınızı alacalı bir şekilde soyun, bir tarafını bıçakla yardıktan sonra 15-20 dakika tuzlu suyun içinde bekletin. Daha sonra kurulayarak yanmaz bir tavanın içinde çok az yak sürerek her tarafını kızartın. Kızarak patlıcanları da havlu kağıdın üzerine alın. Geniş bir tencerenin içinde soğanları küp küp doğrayıp yağ ile birlikte kavurun. Üzerine kıymayı ekleyip karıştırın. Bu şekilde de biraz kavrulduktan sonra biber ve sarımsağı ekleyin. Yine küp küp doğradığınız domatesleri ekledikten sonra baharatını atıp karıştırın. En son sıcak suyu da ekledikten sonra 5 dakika kadar kaynatın ocaktan alın.
+
+Daha sonra patlıcanların yarın kısmından hafifi ayırın ve içine kıymalı harçtan koyun tencerenin içine dizin. Üzer,ne bir biber ve dilimlediğiniz domatesten bir dilim koyun.25-30 dakika kadar pişirin.
+    <br>
+Afiyet olsun...
+    </p>
+    <p>
+      <a href="#" class="subdued">550 Beğeni</a>
+      <a href="#" class="subdued">300 Kaydetme</a>
+    </p>
+  </div>
+  <div class="item item-body" ng-if="bilgi.id==4" >
+
+    <p>
+      <h3>Malzemeler:</h3> 
+      Dolmalık biberlerimizi temizleyelim.
+Soğanları, domatesi küçük küçük doğrayalım.
+Bir kaba hazırladığımız soğan, pirinç, salça, maydanoz, domates, karabiber, tuz, nane ve çok az sıvı yağı ekleyip iyice karıştıralım.
+<br>
+Daha sonra bu harcı biberlere dolduralım.
+Harcı doldurduğumuz biberleri, tencereye dizelim.
+Biberlerin yarısına kadar gelecek şekilde kabın içine koyduğumuz suya 1 yemek kaşığı salça ekleyelim ve eritelim.
+Bu karışımı biberlerin üstüne gelmeyecek şekilde tencereye, biberlerin yarısına gelene kadar dökelim.
+Kestiğimiz domateslerle biberlerin üstünü kapatalım.
+Daha sonra biberlerin üstüne çok az sıvı yağ veya zeytinyağı gezdirelim.
+Kısık ateşte yemeğimizi pişirelim.
+     <br>
+Afiyet olsun...
+    </p>
+    <p>
+      <a href="#" class="subdued">230 Beğeni</a>
+      <a href="#" class="subdued">80 Kaydetme</a>
+    </p>
+  </div>
+  <div class="item item-body" ng-if="bilgi.id==5" >
+
+    <p>
+      Süt, yumurta, 1 Bardak yağ ve sirke yayvan bir kapta karıştırılır. İçine alabildiği kadar un ve kabartma tozu koyularak çok yumuşak bir hamur elde edilir. Yapılan hamur beş eşit parçaya bölünür. 
+      <br>Bölünen bu parçaların her biri 10 eşit parçaya bölünerek 50 adet ufak toplar yapılır ve bu toplar da tepsi içine dizilerek yarım saat kadar dinlendirilir.
+      <br>
+Hamurlara nişasta serpilerek merdane ile 15 cm boyutlarında daireler açılır. Açılan hamurların 10 tanesi üst üste konularak 5 adet 10'lu kümeler yapılır.İkinci katına dövülmüş cevizler serpilir. Üzerine bir hamur konduktan sonra tekrar ceviz serpilir.
+<br>
+5 Hamur üst üste yerleştirildikten sonra baklava dilimleri istenilen boyut ve şekilde kesilir. Kızdırılan 1 paket terayağı üzerine dökülerek fırına verilir. Fırından çıkan tepsinin üzerine hazırlanan şerbet dökülür.
+     <br>
+Afiyet olsun...
+    </p>
+    <p>
+      <a href="#" class="subdued"> 700 Beğeni</a>
+      <a href="#" class="subdued"> 300 Kaydetme</a>
+    </p>
+  </div>
+  <div class="item item-body" ng-if="bilgi.id==6" >
+
+    <p>
+     Sütlaç yapmak için öncelikle pirinci yıkayıp su ile ateşe koyun.
+Pirinçler uzayıp suyu çekene kadar kaynatın, soğuk sütü ekleyin.
+1-2 defa karıştırıp, kaynamasını bekleyin.
+<br>
+Bu arada bir kasede pirinç ununu 1 su bardağı soğuk süt ile ezin.
+Tencerede kaynamakta olan sütten 1-2 kepçe alıp kaseye ekleyin. (pirinç unu ılınmış olmalı).
+Pirinç ununu tencereye ekleyin, ara sıra karıştırarak 10 dakika kadar pişirin.
+Toz şekeri ilave edip karıştırın ve 1-2 taşım kaynatın.
+Sütlacı kaselere paylaştırın.
+<br> 
+Afiyet olsun...
+    </p>
+    <p>
+      <a href="#" class="subdued">250 Beğeni</a>
+      <a href="#" class="subdued">135 Kaydetme</a>
+    </p>
+  </div>
+
+</div>
+  </ion-content>
+</ion-view>
